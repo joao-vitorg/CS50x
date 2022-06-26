@@ -1,11 +1,11 @@
+#include <cs50.h>
 #include <stdio.h>
 
-int main(void) {
+int main(void)
+{
     /* code */
 
-    char name[30];
-    printf("What's your name? ");
-    scanf("%29s", name);
+    string name = get_string("What's your name? ");
 
     printf("hello, %s\n", name);
 

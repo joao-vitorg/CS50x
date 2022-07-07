@@ -12,3 +12,6 @@ add_executable(mario src/pset1/mario/mario.c)
 add_executable(caesar src/pset2/caesar/caesar.c)
 add_executable(readability src/pset2/readability/readability.c)
 add_executable(scrabble src/pset2/scrabble/scrabble.c)
+
+add_executable(plurality src/pset3/plurality/plurality.c)
+add_executable(runoff src/pset3/runoff/runoff.c)

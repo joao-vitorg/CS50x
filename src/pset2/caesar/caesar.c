@@ -32,7 +32,7 @@ int main(int argc, string argv[])
 }
 
 // Check if each char in arg is an digit
-bool only_digits(string arg)
+bool only_digits(const string arg)
 {
     for (int i = 0; arg[i]; i++)
     {

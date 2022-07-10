@@ -30,7 +30,7 @@ int main(void)
 }
 
 // Return the score based on the POINTS array
-int compute_score(string word)
+int compute_score(const string word)
 {
     int score = 0;
     char c;

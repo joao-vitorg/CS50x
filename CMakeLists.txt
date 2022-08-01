@@ -15,3 +15,7 @@ add_executable(scrabble src/pset2/scrabble/scrabble.c)
 
 add_executable(plurality src/pset3/plurality/plurality.c)
 add_executable(runoff src/pset3/runoff/runoff.c)
+
+add_executable(volume src/pset4/volume/volume.c)
+add_executable(filter src/pset4/filter/filter.c src/pset4/filter/helpers.c)
+add_executable(recover src/pset4/recover/recover.c)

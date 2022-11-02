@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(cs50x C)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
 
 SET(CMAKE_C_FLAGS "-lcs50 -lm")
 
@@ -21,3 +21,4 @@ add_executable(filter src/pset4/filter/filter.c src/pset4/filter/helpers.c)
 add_executable(recover src/pset4/recover/recover.c)
 
 add_executable(inheritance src/pset5/inheritance/inheritance.c)
+add_executable(speller src/pset5/speller/dictionary.c src/pset5/speller/speller.c)

@@ -20,7 +20,7 @@ int main(int argc, string argv[])
 
     printf("ciphertext: ");
 
-    // Call rotate funcion for each letter on the string and print then
+    // Call rotate function for each letter on the string and print then
     for (int i = 0; text[i]; i++)
     {
         printf("%c", rotate(text[i], key));
@@ -31,7 +31,7 @@ int main(int argc, string argv[])
     return 0;
 }
 
-// Check if each char in arg is an digit
+// Check if each char in arg is a digit
 bool only_digits(const string arg)
 {
     for (int i = 0; arg[i]; i++)

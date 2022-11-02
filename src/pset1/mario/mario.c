@@ -5,7 +5,7 @@ int main(void)
 {
     int height;
 
-    // The height must be greather than 0 and less than 9
+    // The height must be greater than 0 and less than 9
     do
     {
         height = get_int("Height: ");

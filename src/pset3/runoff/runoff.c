@@ -101,7 +101,7 @@ int main(int argc, string argv[])
         int min = find_min();
         bool tie = is_tie(min);
 
-        // If tie, everyone wins
+        // If tied, everyone wins
         if (tie)
         {
             for (int i = 0; i < candidate_count; i++)

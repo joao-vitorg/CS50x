@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     char *filters = "bgrs";
 
     // Get filter flag and check validity
-    char filter = getopt(argc, argv, filters);
+    char filter = (char) getopt(argc, argv, filters);
     if (filter == '?')
     {
         printf("Invalid filter.\n");
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
     }
 
     // Determine padding for scanlines
-    int padding = (4 - (width * sizeof(RGBTRIPLE)) % 4) % 4;
+    int padding = (int) (4 - (width * sizeof(RGBTRIPLE)) % 4) % 4;
 
     // Iterate over infile's scanlines
     for (int i = 0; i < height; i++)

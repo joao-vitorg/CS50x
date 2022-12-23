@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Cadastro</title>
+    <link href="css/estilos.css" rel="stylesheet"/>
+    <script src="js/valida.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>Qual é o seu perfil?</h1>
+    <h5 class="asterisco">OBS: Todas as informações são de preenchimento obrigatório</h5>
+
+    <form>
+        <label for="nome">Nome<span class="asterisco">*</span></label>
+        <input class="nome" id="nome" required type="text"/>
+
+        <label for="idade">Idade<span class="asterisco">*</span></label>
+        <label class="label_passatempo" for="passatempo">Qual o seu passatempo predileto?<span
+                class="asterisco">*</span></label>
+
+        <input id="idade" max="130" min="1" required type="number"/>
+
+        <select id="passatempo" name="" required>
+            <option value="1">(a) Selecione</option>
+            <option value="2">(b) Passear no shopping (fazer compras, etc)</option>
+            <option value="3">(c) Curtir a natureza (cachoeira, etc)</option>
+        </select>
+        <div id="div_botoes">
+            <input class="botao" id="ver_opcoes" onclick="valida()" type="button" value="Ver opções de carros"/>
+            <button class="botao" id="limpar" type="reset">Limpar</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script defer>
+        function choice() {
+            const {target} = event;
+            target.style.backgroundColor = target.innerHTML == 9 ? "green" : "red";
+            target.style.color = "white";
+        }
+
+        function freeResponse() {
+            const input = document.querySelector("input");
+            input.style.backgroundColor = input.value === "washington" ? "green" : "red";
+            input.style.color = "white";
+        }
+    </script>
+</head>
+<body>
+<div class="header">
+    <h1>Trivia!</h1>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h2>Part 1: Multiple Choice </h2>
+        <hr>
+        <h3>how many planets are there in our solar system?</h3>
+        <button onclick="choice()">7</button>
+        <button onclick="choice()">8</button>
+        <button onclick="choice()">9</button>
+        <button onclick="choice()">10</button>
+    </div>
+
+    <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr>
+        <h3>What is the capital of the United States?</h3>
+        <input type="text">
+        <button onclick="freeResponse()">Check Answer</button>
+    </div>
+</div>
+</body>
+</html>
